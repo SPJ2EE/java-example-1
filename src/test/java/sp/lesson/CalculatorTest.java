@@ -1,14 +1,14 @@
 package sp.lesson;
 
-import static org.junit.Assert.*;
+import org.junit.Assert;
+import org.junit.Test;
 
-/**
- * Created by Aramat on 30.01.2016.
- */
 public class CalculatorTest {
 
-    @org.junit.Test
+    @Test
     public void testAdd() throws Exception {
-
+        Calculator calculator = new Calculator();
+        calculator.add(1,1);
+        Assert.assertEquals(2, calculator.getResult());
     }
 }
